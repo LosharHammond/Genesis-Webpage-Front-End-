@@ -1,0 +1,289 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+/* Navbar styles */
+.navbar {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    font-weight: bold;
+}
+
+.logo {
+    font-size: 24px;
+    color: #000;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu-item {
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.menu-item:hover {
+    color: #233dea;
+}
+
+/* Content styles */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1100px;
+    width: 100%;
+    margin-top: 50px;
+    padding: 20px 40px;
+}
+
+.titles-quote-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.titles {
+    flex: 1;
+    max-width: 500px;
+}
+
+.titles h1 {
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.titles h2 {
+    font-size: 30px;
+    line-height: 1.5;
+    color: #000;
+}
+
+.titles .highlight {
+    color: #4A4FF2;
+    /* Highlighted text in blue */
+}
+
+.quote {
+    flex: 0.5;
+    text-align: right;
+    margin-top: 15%;
+}
+
+.quote p {
+    font-size: 16px;
+    font-style: italic;
+    color: #111111;
+}
+
+.quote .line {
+    width: 20px;
+    /* Line width */
+    height: 2px;
+    /* Line height */
+    background-color: #111111;
+    /* Line color */
+    margin-bottom: 10px;
+    /* Space below the line */
+}
+
+.frame {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.frame img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Services Section */
+.services {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 40px;
+    padding: 0 0px;
+    font-size: 16px;
+    color: #000;
+}
+
+.services-intro {
+    flex: 1;
+    max-width: 400px;
+}
+
+.services-intro p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+
+.service-list {
+    flex: 1.5;
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end; /* Aligns the service list to the right */
+}
+
+.service-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.service-item {
+    font-size: 14px;
+    color: #111111;
+}
+
+
+/* Awards Section */
+.awards {
+    width: 100%;
+    max-width: 1100px;
+    padding: 0px 0px;
+    font-size: 16px;
+    color: #111;
+}
+
+.awards-group {
+    margin-bottom: 20px; /* Space between groups */
+}
+
+.award-row {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.divider {
+    border-bottom: 1px solid #ddd;
+    margin: 20px 0; /* Space around the divider */
+}
+
+.award-title {
+    flex: 1;
+    font-weight: bold;
+    color: #555;
+}
+
+.award-category {
+    flex: 1;
+    font-weight: bold;
+    color: #333;
+}
+
+.award-details {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.award-item {
+    font-weight: bold;
+    color: #111;
+}
+
+.award-description {
+    color: #555;
+    font-size: 14px;
+    max-width: 150px;
+}
+
+.award-year {
+    flex: 0.5;
+    text-align: right;
+    color: #333;
+}
+
+/* Divider line */
+.divider {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    margin: 20px 0; /* Space around the divider */
+}
+
+
+
+/* Footer Section */
+.footer {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #ffffff; /* Adjust color as needed */
+    color: #000;
+}
+
+.footer-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+.footer-links {
+    display: flex;
+    gap: 10px; /* Reduced gap to bring links closer to social icons */
+    padding-left: 40%;
+}
+
+.footer-link {
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: #4A4FF2;
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 10px; /* Reduced gap to bring social icons closer to links */
+}
+
+.social-icon img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover img {
+    transform: scale(1.1); /* Slightly enlarges the icon on hover */
+}
